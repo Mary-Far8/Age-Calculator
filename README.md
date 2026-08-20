@@ -12,18 +12,6 @@ A simple desktop app built with Python's built-in `tkinter` GUI library that con
 - `calc()` converts the typed years into months (`*12`), days (`*365`), and weeks (`days // 7`), then shows all three in a popup.
 - Uses `Pillow` (`PIL`) to load and resize the decorative image.
 
-## ⚠️ Known issues — fix before running
-1. **Hardcoded image path**, which will crash on any other machine:
-```python
-pil_image = Image.open(r"c:\Users\user\Downloads\unnamed (1).png")
-```
-Fix: put the image in this project folder (e.g. `age_image.png`) and change the line to:
-```python
-pil_image = Image.open("age_image.png")
-```
-
-2. **No input validation** — typing anything non-numeric (or leaving it empty) in the age box will crash the app when "calculate age" is clicked, since `int(the_age_value)` isn't wrapped in a try/except like the other apps in this portfolio.
-
 ## Requirements
 - Python 3.x
 - `tkinter` (included with most standard Python installations)
