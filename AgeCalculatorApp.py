@@ -19,7 +19,7 @@ age_app.configure(background="pink")
 
 
 # open the image file and resize it to 200x150 pixels
-pil_image = Image.open(r"c:\Users\user\Downloads\unnamed (1).png")
+pil_image = Image.open(r"C:\Users\user\Desktop\Python\Age Calculator\Age Calculator.jfif")
 pil_image = pil_image.resize((200, 150))
 
 
